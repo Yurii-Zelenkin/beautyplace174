@@ -209,7 +209,7 @@
       }
 
       section {
-        padding: 70px 0;
+        padding: 20px 0;
       }
 
       .section-title {
@@ -651,7 +651,7 @@
           <div>
             <div class="logo-text-prestige">
               <span class="beauty">BEAUTY</span><span class="place">PLACE</span>
-              <div class="logo-sub">САЛОН КРАСОТЫ</div>
+              <div class="logo-sub">САЛОН КРАСОТЫ ЧЕЛЯБИНСК</div>
             </div>
           </div>
         </div>
@@ -688,7 +688,7 @@
             <span style="width: 40px; height: 1px; background: #b79b7c"></span>
             <span
               style="
-                font-family: &quot;Hedvig Letters Serif&quot;, serif;
+                font-family: 'Hedvig Letters Serif', serif;
                 font-size: 2rem;
                 letter-spacing: 8px;
                 color: #b79b7c;
@@ -698,17 +698,67 @@
             >
             <span style="width: 40px; height: 1px; background: #b79b7c"></span>
           </div>
+
+          <!-- ИСПРАВЛЕННЫЙ H1 -->
           <h1
             style="
-              font-family: &quot;Hedvig Letters Serif&quot;, serif;
+              font-family: 'Hedvig Letters Serif', serif;
               font-size: 2.5rem;
               font-weight: 400;
               color: #2f2a26;
               margin: 15px 0;
+              text-align: center;
+              line-height: 1.4;
             "
           >
-            Ногтевой сервис, наращивание ресниц г.Челябинск
+            <span style="display: inline-block; margin: 0 5px">Nails:</span>
+            <span style="display: inline-block; margin: 0 5px">
+              маникюр <span style="color: #b79b7c;">•</span> педикюр
+              <span style="color: #b79b7c;">•</span> наращивание
+            </span>
+
+            <br class="mobile-break" />
+            <span style="display: inline-block; margin: 0 5px"
+              >Brows & Lashes:</span
+            >
+            <span style="display: inline-block; margin: 0 5px">
+              архитектура <span style="color: #b79b7c;">•</span> ламинирование
+              <span style="color: #b79b7c;">•</span> наращивание
+            </span>
           </h1>
+
+          <!-- ИСПРАВЛЕННЫЙ МЕДИА-ЗАПРОС -->
+          <style>
+            @media (min-width: 768px) {
+              .mobile-break {
+                display: none;
+              }
+            }
+
+            @media (max-width: 767px) {
+              h1 {
+                font-size: 1.8rem !important;
+              }
+
+              h1 span {
+                font-size: 1.8rem !important;
+                display: inline-block !important;
+                margin: 5px 3px !important;
+              }
+
+              .mobile-break {
+                display: block !important;
+              }
+            }
+
+            @media (max-width: 480px) {
+              h1,
+              h1 span {
+                font-size: 1.5rem !important;
+              }
+            }
+          </style>
+
           <div
             style="
               width: 60px;
@@ -725,96 +775,395 @@
               ><i class="fas fa-star"></i>топ-мастера</span
             >
             <span class="feature-tag"
-              ><i class="fas fa-clock"></i>8:00–21:00</span
+              ><i class="fas fa-clock"></i>9:00–21:00</span
             >
           </div>
         </div>
       </section>
 
       <!-- ЦЕНЫ -->
-      <section id="prices">
-        <div class="container">
-          <h2 class="section-title"><span>стоимость</span></h2>
-          <div class="grid-2">
-            <div class="prestige-card">
-              <div class="card-label">MASTER</div>
-              <h3>Маникюр с покрытием</h3>
-              <div class="price-prestige">1 800 ₽ <small>гель-лак</small></div>
-              <ul class="features-prestige">
-                <li><i class="fas fa-check"></i> премиум-покрытие Luxio</li>
-                <li><i class="fas fa-check"></i> аппаратный/комбинированный</li>
-                <li><i class="fas fa-check"></i> укрепление + дизайн</li>
-                <li>
-                  <i class="fas fa-check"></i>
-                  <strong>маникюр Челябинск</strong> — топ-мастера
-                </li>
-              </ul>
-            </div>
-            <div class="prestige-card">
-              <div class="card-label">LASH & PEDICURE</div>
-              <h3>Педикюр / Ресницы</h3>
-              <div class="price-prestige">от 2 200 ₽</div>
-              <ul class="features-prestige">
-                <li>
-                  <i class="fas fa-check"></i>
-                  <strong>педикюр Челябинск</strong> комплексный
-                </li>
-                <li>
-                  <i class="fas fa-check"></i> наращивание ресниц от 2500₽
-                </li>
-                <li><i class="fas fa-check"></i> материалы высшего класса</li>
-              </ul>
-            </div>
-          </div>
+     <section id="prices">
+  <div class="container">
+    <h2 class="section-title"><span>PRICE</span></h2>
 
-          <!-- Доп услуги -->
-          <div class="features-row">
-            <span class="feature-tag"
-              ><i class="fas fa-map-pin"></i> маникюр Челябинск
-              Университетская</span
-            >
-            <span class="feature-tag">брови 800₽</span>
-            <span class="feature-tag">снятие 400₽</span>
-          </div>
-
-          <!-- Дисклеймер по ценам -->
-          <div class="price-disclaimer">
-            *Цены указаны как минимальная стоимость услуг. Окончательная
-            стоимость зависит от сложности работы и выбранных материалов.
-          </div>
-
-          <div style="text-align: center; margin-top: 30px">
-            <a
-              href="https://n827830.yclients.com/"
-              target="_blank"
-              class="online-btn"
-              style="background: #b79b7c; color: white; border: none"
-              >ЗАПИСАТЬСЯ</a
-            >
+    <!-- КАРУСЕЛЬ С ОДНОЙ КАРТОЧКОЙ -->
+    <div style="position: relative; max-width: 500px; margin: 0 auto; overflow: hidden; touch-action: pan-y;">
+      
+      <!-- Контейнер с карточками -->
+      <div id="priceCarousel" style="
+        display: flex;
+        transition: transform 0.3s ease;
+        cursor: grab;
+      ">
+        <!-- Карточка 1: Маникюр -->
+        <div style="flex: 0 0 100%; padding: 0 10px;">
+          <div class="prestige-card" style="margin: 0;">
+            <div class="card-label">MANICURE</div>
+            <h3>Маникюр с покрытием</h3>
+            <div class="price-prestige">от 1 800 ₽ <small>гель-лак</small></div>
+            <ul class="features-prestige">
+              <li><i class="fas fa-check"></i> снятие старого покрытия</li>
+              <li><i class="fas fa-check"></i> комбинированный маникюр</li>
+              <li><i class="fas fa-check"></i> однотонное покрытие </li>
+              <li><i class="fas fa-check"></i> укрепление + small дизайн</li>
+            </ul>
           </div>
         </div>
-      </section>
+
+        <!-- Карточка 2: Педикюр -->
+        <div style="flex: 0 0 100%; padding: 0 10px;">
+          <div class="prestige-card" style="margin: 0;">
+            <div class="card-label">PEDICURE</div>
+            <h3>Полный педикюр</h3>
+            <div class="price-prestige"> от 2 000 ₽ </div>
+            <ul class="features-prestige">
+              <li><i class="fas fa-check"></i> аппаратный педикюр</li>
+              <li><i class="fas fa-check"></i> обработка стоп и пальцев</li>
+              <li><i class="fas fa-check"></i> покрытие гель-лак</li>
+              <li><i class="fas fa-check"></i> массаж стоп</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Карточка 3: Наращивание -->
+        <div style="flex: 0 0 100%; padding:окрытие Luxio 0 10px;">
+          <div class="prestige-card" style="margin: 0;">
+            <div class="card-label">Nails</div>
+            <h3>Дополнительные услуги</h3>
+            <div class="price-prestige">от 300 ₽ </div>
+            <ul class="features-prestige">
+              <li><i class="fas fa-check"></i> французский маникюр</li>
+              <li><i class="fas fa-check"></i> втирка</li>
+              <li><i class="fas fa-check"></i> восстановление архитектуры</li>
+              <li><i class="fas fa-check"></i> стэмпинг </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- Кнопки навигации (для десктопа) -->
+      <button onclick="prevSlide()" style="
+        position: absolute;
+        top: 50%;
+        left: -10px;
+        transform: translateY(-50%);
+        background: white;
+        border: 1px solid #b79b7c;
+        color: #b79b7c;
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        font-size: 1.5rem;
+        cursor: pointer;
+        z-index: 10;
+        box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      ">‹</button>
+      
+      <button onclick="nextSlide()" style="
+        position: absolute;
+        top: 50%;
+        right: -10px;
+        transform: translateY(-50%);
+        background: white;
+        border: 1px solid #b79b7c;
+        color: #b79b7c;
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        font-size: 1.5rem;
+        cursor: pointer;
+        z-index: 10;
+        box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      ">›</button>
+
+      <!-- Индикаторы (точечки) -->
+      <div style="display: flex; justify-content: center; gap: 10px; margin-top: 20px;">
+        <span class="dot active" onclick="currentSlide(0)"></span>
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+      </div>
+    </div>
+
+   
+    <!-- Дисклеймер по ценам -->
+    <div class="price-disclaimer">
+      *Цены указаны как минимальная стоимость услуг. Окончательная
+      стоимость зависит от сложности работы и выбранных материалов.
+    </div>
+
+    <div style="text-align: center; margin-top: 30px">
+      <a
+        href="https://n827830.yclients.com/"
+        target="_blank"
+        class="online-btn"
+        style="background: #b79b7c; color: white; border: none"
+        >ЗАПИСАТЬСЯ</a
+      >
+    </div>
+  </div>
+</section>
+
+<style>
+  .dot {
+    width: 10px;
+    height: 10px;
+    background: #e7dfd7;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: 0.2s;
+  }
+  .dot.active {
+    background: #b79b7c;
+    transform: scale(1.2);
+  }
+</style>
+
+<script>
+  let currentIndex = 0;
+  const carousel = document.getElementById('priceCarousel');
+  const dots = document.querySelectorAll('.dot');
+  let startX = 0;
+  let isDragging = false;
+
+  function updateCarousel() {
+    carousel.style.transform = `translateX(-${currentIndex * 100}%)`;
+    dots.forEach((dot, i) => {
+      dot.classList.toggle('active', i === currentIndex);
+    });
+  }
+
+  function nextSlide() {
+    currentIndex = (currentIndex + 1) % 3;
+    updateCarousel();
+  }
+
+  function prevSlide() {
+    currentIndex = (currentIndex - 1 + 3) % 3;
+    updateCarousel();
+  }
+
+  function currentSlide(index) {
+    currentIndex = index;
+    updateCarousel();
+  }
+
+  // Свайп для мобилок
+  carousel.addEventListener('touchstart', (e) => {
+    startX = e.touches[0].clientX;
+    isDragging = true;
+  });
+
+  carousel.addEventListener('touchmove', (e) => {
+    if (!isDragging) return;
+    const currentX = e.touches[0].clientX;
+    const diff = startX - currentX;
+    if (Math.abs(diff) > 50) {
+      if (diff > 0) {
+        nextSlide();
+      } else {
+        prevSlide();
+      }
+      isDragging = false;
+    }
+  });
+
+  carousel.addEventListener('touchend', () => {
+    isDragging = false;
+  });
+</script>
+
+<!-- КАРУСЕЛЬ 2: LASHES, BROWS, LAMI -->
+<section style="margin-top: 10px;">
+  <div class="container">
+    <h2 class="section-title"><span>LASHES & BROWS</span></h2>
+
+    <div style="position: relative; max-width: 500px; margin: 0 auto; overflow: hidden; touch-action: pan-y;">
+      
+      <!-- Контейнер с карточками -->
+      <div id="carouselLashes" style="
+        display: flex;
+        transition: transform 0.3s ease;
+        cursor: grab;
+      ">
+        <!-- Карточка 1: Lashes -->
+        <div style="flex: 0 0 100%; padding: 0 10px;">
+          <div class="prestige-card" style="margin: 0;">
+            <div class="card-label">LASHES</div>
+            <h3>Наращивание ресниц</h3>
+            <div class="price-prestige">от 2 500 ₽</div>
+            <ul class="features-prestige">
+              <li><i class="fas fa-check"></i> LED system 1-3D</li>
+              <li><i class="fas fa-check"></i> классическое наращивание</li>
+              <li><i class="fas fa-check"></i> мокрый эффект</li>
+              <li><i class="fas fa-check"></i> экспресс наращивание</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Карточка 2: Brows -->
+        <div style="flex: 0 0 100%; padding: 0 10px;">
+          <div class="prestige-card" style="margin: 0;">
+            <div class="card-label">BROWS</div>
+            <h3>Архитектура бровей</h3>
+            <div class="price-prestige">от 1 200 ₽</div>
+            <ul class="features-prestige">
+              <li><i class="fas fa-check"></i> коррекция бровей</li>
+              <li><i class="fas fa-check"></i> окрашивание краской/хной</li>
+              <li><i class="fas fa-check"></i> долговременная укладка</li>
+              <li><i class="fas fa-check"></i> моделирование формы</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Карточка 3: Lami -->
+        <div style="flex: 0 0 100%; padding: 0 10px;">
+          <div class="prestige-card" style="margin: 0;">
+            <div class="card-label">LAMI</div>
+            <h3>Ламинирование ресниц</h3>
+            <div class="price-prestige">от 2 500 ₽</div>
+            <ul class="features-prestige">
+              <li><i class="fas fa-check"></i> подкручивание + уход</li>
+              <li><i class="fas fa-check"></i> питание и восстановление</li>
+              <li><i class="fas fa-check"></i> эффект «свои ресницы»</li>
+              <li><i class="fas fa-check"></i> гипоаллергенные материалы</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- Кнопки навигации -->
+      <button onclick="prevSlideLashes()" style="
+        position: absolute;
+        top: 50%;
+        left: -10px;
+        transform: translateY(-50%);
+        background: white;
+        border: 1px solid #b79b7c;
+        color: #b79b7c;
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        font-size: 1.5rem;
+        cursor: pointer;
+        z-index: 10;
+        box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      ">‹</button>
+      
+      <button onclick="nextSlideLashes()" style="
+        position: absolute;
+        top: 50%;
+        right: -10px;
+        transform: translateY(-50%);
+        background: white;
+        border: 1px solid #b79b7c;
+        color: #b79b7c;
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        font-size: 1.5rem;
+        cursor: pointer;
+        z-index: 10;
+        box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      ">›</button>
+
+      <!-- Индикаторы (3 точечки) -->
+      <div style="display: flex; justify-content: center; gap: 10px; margin-top: 20px;">
+        <span class="dot2 active" onclick="currentSlideLashes(0)"></span>
+        <span class="dot2" onclick="currentSlideLashes(1)"></span>
+        <span class="dot2" onclick="currentSlideLashes(2)"></span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<style>
+  .dot2 {
+    width: 10px;
+    height: 10px;
+    background: #e7dfd7;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: 0.2s;
+  }
+  .dot2.active {
+    background: #b79b7c;
+    transform: scale(1.2);
+  }
+</style>
+
+<script>
+  // Карусель для Lashes / Brows / Lami
+  let currentIndexLashes = 0;
+  const carouselLashes = document.getElementById('carouselLashes');
+  const dotsLashes = document.querySelectorAll('.dot2');
+
+  function updateCarouselLashes() {
+    carouselLashes.style.transform = `translateX(-${currentIndexLashes * 100}%)`;
+    dotsLashes.forEach((dot, i) => {
+      dot.classList.toggle('active', i === currentIndexLashes);
+    });
+  }
+
+  function nextSlideLashes() {
+    currentIndexLashes = (currentIndexLashes + 1) % 3;
+    updateCarouselLashes();
+  }
+
+  function prevSlideLashes() {
+    currentIndexLashes = (currentIndexLashes - 1 + 3) % 3;
+    updateCarouselLashes();
+  }
+
+  function currentSlideLashes(index) {
+    currentIndexLashes = index;
+    updateCarouselLashes();
+  }
+
+  // Свайп для второй карусели
+  carouselLashes.addEventListener('touchstart', (e) => {
+    window.lashesStartX = e.touches[0].clientX;
+    window.lashesDragging = true;
+  });
+
+  carouselLashes.addEventListener('touchmove', (e) => {
+    if (!window.lashesDragging) return;
+    const currentX = e.touches[0].clientX;
+    const diff = window.lashesStartX - currentX;
+    if (Math.abs(diff) > 50) {
+      if (diff > 0) {
+        nextSlideLashes();
+      } else {
+        prevSlideLashes();
+      }
+      window.lashesDragging = false;
+    }
+  });
+
+  carouselLashes.addEventListener('touchend', () => {
+    window.lashesDragging = false;
+  });
+</script>
 
       <!-- ГАЛЕРЕЯ РАБОТ - с исправленными путями -->
       <section id="works" style="background: #faf7f2">
         <div class="container">
-          <h2 class="section-title"><span>наши работы и вайб</span></h2>
+          <h2 class="section-title"><span>НАШИ РАБОТЫ И ВАЙБ</span></h2>
           <div class="gallery-prestige">
             <!-- Карточка 1: внутри салона -->
-            <div
-              class="gallery-item"
-              style="background-image: url(&quot;jpg/внутри салона.png&quot;)"
-              onerror="
-                this.classList.add('mock-interior');
-                this.style.backgroundImage = '';
-              "
-            ></div>
+          <div class="gallery-item" style="overflow: hidden; background: #f0e9e2;">
+  <video 
+    src="jpg/видео.mp4" 
+    style="width: 100%; height: 100%; object-fit: cover;"
+    autoplay 
+    muted 
+    loop 
+    playsinline
+  ></video>
+</div>
             <!-- Карточка 2: маникюр образец -->
             <div
               class="gallery-item"
-              style="
-                background-image: url(&quot;jpg/маникюр образец работы.png&quot;);
-              "
+              style="background-image: url('jpg/маникюр образец работы.png')"
               onerror="
                 this.classList.add('mock-nail');
                 this.style.backgroundImage = '';
@@ -823,9 +1172,7 @@
             <!-- Карточка 3: процесс наращивания 1 -->
             <div
               class="gallery-item"
-              style="
-                background-image: url(&quot;jpg/процесс наращивания.png&quot;);
-              "
+              style="background-image: url('jpg/процесс наращивания.png')"
               onerror="
                 this.classList.add('mock-lash1');
                 this.style.backgroundImage = '';
@@ -834,9 +1181,7 @@
             <!-- Карточка 4: процесс наращивания 2 -->
             <div
               class="gallery-item"
-              style="
-                background-image: url(&quot;jpg/процесс наращивания2.png&quot;);
-              "
+              style="background-image: url('jpg/процесс наращивания2.png')"
               onerror="
                 this.classList.add('mock-lash2');
                 this.style.backgroundImage = '';
@@ -845,9 +1190,7 @@
             <!-- Карточка 5: реклайнер для педикюра -->
             <div
               class="gallery-item"
-              style="
-                background-image: url(&quot;jpg/реклайнер для педикюра.png&quot;);
-              "
+              style="background-image: url('jpg/реклайнер для педикюра.png')"
               onerror="
                 this.classList.add('mock-pedicure');
                 this.style.backgroundImage = '';
@@ -856,7 +1199,7 @@
             <!-- Карточка 6: ресницы крупно -->
             <div
               class="gallery-item"
-              style="background-image: url(&quot;jpg/ресницы крупно.png&quot;)"
+              style="background-image: url('jpg/ресницы крупно.png')"
               onerror="
                 this.classList.add('mock-lashbig');
                 this.style.backgroundImage = '';
@@ -865,7 +1208,7 @@
             <!-- Карточка 7: ресницы образец -->
             <div
               class="gallery-item"
-              style="background-image: url(&quot;jpg/ресницы образец.png&quot;)"
+              style="background-image: url('jpg/ресницы образец.png')"
               onerror="
                 this.classList.add('mock-lashsample');
                 this.style.backgroundImage = '';
@@ -874,9 +1217,7 @@
             <!-- Карточка 8: рабочее место маникюр -->
             <div
               class="gallery-item"
-              style="
-                background-image: url(&quot;jpg/рабочее место маникюр.png&quot;);
-              "
+              style="background-image: url('jpg/рабочее место маникюр.png')"
               onerror="
                 this.classList.add('mock-interior');
                 this.style.backgroundImage = '';
@@ -885,21 +1226,16 @@
           </div>
 
           <!-- Ссылки на соцсети -->
-          <div class="social-links-row">
-            <a
-              href="https://instagram.com/beautyplace174"
-              target="_blank"
-              class="social-link instagram"
-            >
-              <i class="fab fa-instagram"></i> Больше фото в Instagram
-            </a>
-            <a
-              href="https://vk.com/beautyplace174"
-              target="_blank"
-              class="social-link vk"
-            >
-              <i class="fab fa-vk"></i> Мы во ВКонтакте
-            </a>
+         <div class="social-links-row">
+  <a
+    href="https://2gis.ru/chelyabinsk/geo/70000001085301035"
+    target="_blank"
+    class="social-link instagram"
+    style="background: #22a32d; color: black; border: none;"
+  >
+    <i class="fas fa-map-marker-alt"></i> Мы в 2GIS
+  </a>
+</div>
           </div>
         </div>
       </section>
@@ -907,7 +1243,7 @@
       <!-- Адрес с картой - исправленный путь -->
       <section id="address">
         <div class="container">
-          <h2 class="section-title"><span>адрес</span></h2>
+          <h2 class="section-title"><span>АДРЕС</span></h2>
           <div class="address-prestige">
             <div class="address-text-block">
               <i
@@ -922,12 +1258,8 @@
                 <i class="fas fa-sign-in-alt"></i> вход со стороны
                 Университетской Набережной
               </div>
-              <p style="font-weight: 300; font-size: 0.9rem">
-                Всегда есть парковка для гостей
-              </p>
-              <p style="font-weight: 400; color: #b79b7c; margin-top: 10px">
-                маникюр Челябинск университетская набережная — мы здесь
-              </p>
+              
+             
             </div>
 
             <!-- КОНТЕЙНЕР ДЛЯ КАРТЫ -->
@@ -948,110 +1280,36 @@
       </section>
 
       <!-- Бонус-блок -->
-      <section style="padding-top: 20px">
-        <div class="container">
-          <div
-            style="
-              background: #faf7f2;
-              border-radius: 60px;
-              padding: 40px;
-              display: flex;
-              flex-wrap: wrap;
-              gap: 20px;
-              align-items: center;
-              justify-content: space-around;
-              border: 1px solid #e7dfd7;
-            "
-          >
-            <i class="fas fa-gift" style="font-size: 2rem; color: #b79b7c"></i>
-            <span
-              style="
-                font-family: &quot;Hedvig Letters Serif&quot;, serif;
-                font-size: 1.2rem;
-              "
-              >подарок при первом визите</span
-            >
-            <a
-              href="https://n827830.yclients.com/"
-              target="_blank"
-              class="prestige-btn-outline"
-              >узнать</a
-            >
-          </div>
-        </div>
-      </section>
-    </main>
-
-    <!-- Футер -->
-    <footer class="footer-prestige">
-      <div class="container">
-        <div class="footer-main-row">
-          <div class="footer-logo-text">BEAUTY <span>PLACE</span></div>
-          <div class="footer-social">
-            <a href="#" aria-label="WhatsApp"
-              ><i class="fab fa-whatsapp"></i
-            ></a>
-            <a href="#" aria-label="Telegram"
-              ><i class="fab fa-telegram"></i
-            ></a>
-            <a href="#" aria-label="Instagram"
-              ><i class="fab fa-instagram"></i
-            ></a>
-            <a href="#" aria-label="VK"><i class="fab fa-vk"></i></a>
-          </div>
-          <div class="footer-phone">
-            <i class="fas fa-phone-alt" style="color: #b79b7c"></i> 8 (908)
-            580-99-26
-          </div>
-        </div>
-        <div class="footer-bottom-row">
-          <span>© beauty place премиум студия</span>
-          <span
-            >г.Челябинск, Университетская Набережная д.105 (салон Beauty
-            Place)</span
-          >
-          <a
-            href="https://n827830.yclients.com/"
-            target="_blank"
-            style="color: #b79b7c"
-            >онлайн-запись</a
-          >
-        </div>
-
-        <!-- Юридические блоки -->
-        <div class="legal-footer">
-          <a
-            href="#"
-            onclick="
-              alert(
-                'Политика конфиденциальности: Мы не собираем и не храним персональные данные посетителей. Вся информация предоставляется добровольно при записи через внешний сервис Yclients.',
-              );
-              return false;
-            "
-            >Политика конфиденциальности</a
-          >
-          <a
-            href="#"
-            onclick="
-              alert(
-                'Согласие на обработку персональных данных: Нажимая кнопку Записаться, вы будете перенаправлены на сайт Yclients. Мы не обрабатываем и не храним ваши данные.',
-              );
-              return false;
-            "
-            >Согласие на обработку данных</a
-          >
-          <a
-            href="#"
-            onclick="
-              alert(
-                'Информация на сайте носит ознакомительный характер. Цены указаны как минимальные. Для получения точной информации обращайтесь к администратору.',
-              );
-              return false;
-            "
-            >Информация о ценах</a
-          >
-        </div>
+      <section style="padding
+      <!-- Футер -->
+<footer class="footer-prestige">
+  <div class="container">
+    <div class="footer-main-row">
+      <div class="footer-logo-text">BEAUTY <span>PLACE</span></div>
+      <div class="footer-social">
+       
+        <a href="https://t.me/beautyplace74" aria-label="Telegram"><i class="fab fa-telegram"></i></a>
+               <a href="https://vk.ru/beautyplace74" aria-label="VK"><i class="fab fa-vk"></i></a>
       </div>
-    </footer>
-  </body>
-</html>
+     <div class="footer-phone">
+  <i class="fas fa-phone-alt" style="color: #b79b7c"></i> 
+  <a href="tel:+79085809926" style="color: inherit; text-decoration: none;">8 (908) 580-99-26</a>
+  <span style="margin: 0 10px; color: #b79b7c;">|</span>
+  <a href="tel:+79128984261" style="color: inherit; text-decoration: none;">8 (912) 898-42-61</a>
+</div>
+    </div>
+    
+    <div class="footer-bottom-row">
+      <span>© beauty place </span>
+      <span>г.Челябинск, Университетская Набережная д.105 (салон Beauty Place)</span>
+      <a href="https://n827830.yclients.com/" target="_blank" style="color: #b79b7c">онлайн-запись</a>
+    </div>
+
+    <!-- Юридические блоки -->
+    <div class="legal-footer">
+      <a href="#" onclick="alert('Политика конфиденциальности: Мы не собираем и не храним персональные данные посетителей. Вся информация предоставляется добровольно при записи через внешний сервис Yclients.'); return false;">Политика конфиденциальности</a>
+      <a href="#" onclick="alert('Согласие на обработку персональных данных: Нажимая кнопку Записаться, вы будете перенаправлены на сайт Yclients. Мы не обрабатываем и не храним ваши данные.'); return false;">Согласие на обработку данных</a>
+      <a href="#" onclick="alert('Информация на сайте носит ознакомительный характер. Цены указаны как минимальные. Для получения точной информации обращайтесь к администратору.'); return false;">Информация о ценах</a>
+    </div>
+  </div>
+</footer>
